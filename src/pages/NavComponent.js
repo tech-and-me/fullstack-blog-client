@@ -10,13 +10,16 @@ const NavComponent = () => {
       <Container>
         <div className="py-3 d-flex flex-column flex-md-row justify-content-between gap-3">
           <div>
-            <Link to="/post" className="text-light pe-4 text-decoration-none">
+            <Link
+              to="/post"
+              className="text-light text-center text-decoration-none nav-item"
+            >
               Home
             </Link>
             {authState.status && (
               <Link
                 to="/post/create"
-                className="text-light pe-4 text-decoration-none"
+                className="text-light text-decoration-none nav-item"
               >
                 Create Post
               </Link>
@@ -24,7 +27,7 @@ const NavComponent = () => {
           </div>
 
           {authState.userName ? (
-            <div className="text-center">
+            <div className="text-center py-2">
               <h5 className="italic letter-spacing-1">
                 Hello {authState.userName} ! Welcome to our blog !
               </h5>
@@ -40,13 +43,13 @@ const NavComponent = () => {
               <>
                 <Link
                   to="/login"
-                  className="text-light pe-4 text-decoration-none"
+                  className="text-light text-decoration-none nav-item"
                 >
                   Login
                 </Link>
                 <Link
                   to="/signup"
-                  className="text-light pe-4 text-decoration-none"
+                  className="text-light text-decoration-none nav-item"
                 >
                   Signup
                 </Link>
@@ -54,7 +57,7 @@ const NavComponent = () => {
             ) : (
               <Link
                 to="/logout"
-                className="text-light pe-4 text-decoration-none me-auto"
+                className="text-light text-decoration-none me-auto nav-item"
               >
                 Logout
               </Link>

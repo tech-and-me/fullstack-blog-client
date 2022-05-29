@@ -26,6 +26,15 @@ body{
     font-style: italic!important;
 }
 
+
+.nav-item{
+    text-align: center;
+    justify-content: center;
+    outline: white 1px solid;
+    padding: 7px 14px;
+    width: 3rem!important;
+    margin-right: 1.5rem;
+}
 .letter-spacing-1{
     letter-spacing: 2px;
 }

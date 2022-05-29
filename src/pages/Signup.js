@@ -76,7 +76,7 @@ const Signup = () => {
             />
           </div>
 
-          <button type="submit" className="btn btn-primary my-3">
+          <button type="submit" className="btn btn-primary my-3 bg-main">
             Sign up
           </button>
         </Form>
