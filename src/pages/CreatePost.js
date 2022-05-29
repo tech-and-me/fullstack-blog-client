@@ -79,7 +79,7 @@ const CreatePost = () => {
         setShowMessage(false);
         console.log(showMessage);
         navigate("/");
-      }, 700);
+      }, 300);
     } else {
       setShowMessage(false);
     }
