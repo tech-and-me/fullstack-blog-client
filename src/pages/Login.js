@@ -15,7 +15,7 @@ const Login = () => {
     const loginDetail = { userName, password };
     //send loginDetail to backend to check if it is valid and then receive response from backend
     const response = await axios.post(
-      "http://localhost:3001/auth/login",
+      "https://react-mysql-blog-app.herokuapp.com/auth/login",
       loginDetail
     );
 

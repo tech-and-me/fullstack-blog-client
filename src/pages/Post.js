@@ -17,12 +17,16 @@ const Post = () => {
 
   useEffect(() => {
     const fetchPost = async () => {
-      const response = await axios.get(`http://localhost:3001/posts/${id}`);
+      const response = await axios.get(
+        `https://react-mysql-blog-app.herokuapp.com/posts/${id}`
+      );
       setPostObject(response.data);
     };
 
     const fetchComments = async () => {
-      const response = await axios.get(`http://localhost:3001/comments/${id}`);
+      const response = await axios.get(
+        `https://react-mysql-blog-app.herokuapp.com/comments/${id}`
+      );
       setCommentList(response.data);
     };
 
@@ -47,7 +51,7 @@ const Post = () => {
     //the first object, by default it is treated as Body, Hence, when we construct the body object
     //the second object can be any other things but in this case , it is the headers.
     const response = await axios.post(
-      "http://localhost:3001/comments/create",
+      "https://react-mysql-blog-app.herokuapp.com/comments/create",
       newCommentObj,
       newCommentHeader
     );
@@ -73,7 +77,7 @@ const Post = () => {
 
   const deleteComment = async (id) => {
     const response = await axios.delete(
-      `http://localhost:3001/comments/${id}`,
+      `https://react-mysql-blog-app.herokuapp.com/comments/${id}`,
       {
         headers: { accessToken: localStorage.getItem("accessToken") },
       }
@@ -82,9 +86,12 @@ const Post = () => {
   };
 
   const deletePost = async (id) => {
-    const response = await axios.delete(`http://localhost:3001/posts/${id}`, {
-      headers: { accessToken: localStorage.getItem("accessToken") },
-    });
+    const response = await axios.delete(
+      `https://react-mysql-blog-app.herokuapp.com/posts/${id}`,
+      {
+        headers: { accessToken: localStorage.getItem("accessToken") },
+      }
+    );
     navigate("/");
   };
 

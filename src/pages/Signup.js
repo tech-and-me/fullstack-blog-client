@@ -25,7 +25,10 @@ const Signup = () => {
 
   const handleSubmit = async (data, { resetForm }) => {
     console.log("invoked submit signup");
-    await axios.post("http://localhost:3001/auth/signup", data);
+    await axios.post(
+      "https://react-mysql-blog-app.herokuapp.com/auth/signup",
+      data
+    );
     console.log(data);
     resetForm();
     navigate("/login");

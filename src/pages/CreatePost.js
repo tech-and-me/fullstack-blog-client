@@ -63,7 +63,7 @@ const CreatePost = () => {
       setShowMessage(true);
       console.log("...1");
       const response = await axios.post(
-        "http://localhost:3001/posts",
+        "https://react-mysql-blog-app.herokuapp.com/posts",
         formValues,
         {
           headers: { accessToken: localStorage.getItem("accessToken") },

@@ -24,11 +24,14 @@ function App() {
   useEffect(() => {
     //when new page reload, we want to retrieve accessToken from localStorage and pass it to backend to reponse with error or userData. see backend codes for this routes in .routes.users
     axios
-      .get("http://localhost:3001/auth/retriveLocalStoragedata", {
-        headers: {
-          accessToken: localStorage.getItem("accessToken"),
-        },
-      })
+      .get(
+        "https://react-mysql-blog-app.herokuapp.com/auth/retriveLocalStoragedata",
+        {
+          headers: {
+            accessToken: localStorage.getItem("accessToken"),
+          },
+        }
+      )
       .then((response) => {
         if (response.data.error) {
           setAuthState({

@@ -22,9 +22,12 @@ const Home = () => {
     } else {
       // if logged in, fetch allPost and all likes belong to the current user
       const getAllPosts = async () => {
-        const response = await axios.get("http://localhost:3001/posts", {
-          headers: { accessToken: localStorage.getItem("accessToken") },
-        });
+        const response = await axios.get(
+          "https://react-mysql-blog-app.herokuapp.com/posts",
+          {
+            headers: { accessToken: localStorage.getItem("accessToken") },
+          }
+        );
 
         //Construcct list of all posts
         setListOfPosts(response.data.listOfPosts);
@@ -43,7 +46,7 @@ const Home = () => {
 
   const handleLike = async (id) => {
     const response = await axios.post(
-      "http://localhost:3001/like",
+      "https://react-mysql-blog-app.herokuapp.com/like",
       { PostId: id },
       { headers: { accessToken: localStorage.getItem("accessToken") } }
     );

@@ -11,13 +11,17 @@ const Profile = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get(`http://localhost:3001/auth/basicInfo/${id}`).then((response) => {
-      setUserName(response.data.userName);
-    });
+    axios
+      .get(`https://react-mysql-blog-app.herokuapp.com/auth/basicInfo/${id}`)
+      .then((response) => {
+        setUserName(response.data.userName);
+      });
 
-    axios.get(`http://localhost:3001/posts/byuserId/${id}`).then((response) => {
-      setListOfPosts(response.data.listOfPostsByUser);
-    });
+    axios
+      .get(`https://react-mysql-blog-app.herokuapp.com/posts/byuserId/${id}`)
+      .then((response) => {
+        setListOfPosts(response.data.listOfPostsByUser);
+      });
   }, []);
 
   return (
