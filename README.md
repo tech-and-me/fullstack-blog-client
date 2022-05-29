@@ -1,3 +1,21 @@
+# Introdution
+This project is a full-stack web application where users require to signup to view all posts , create post, add comment, delete comment, like or unlike a post.
+Frontend of this web application is built with react.js. I used react-icons as well as react-bootstrap for some styling.
+
+# Database
+I used MySQL for database management of this web application. Since MySQl is not a clouded-based database, to make this app work perfectly fine anywhere in the wold, I have connect MySQL Database with ClearDB Database with the help of Heroku Add-on option. 
+
+# Deployment
+Front-end of this app is deployed on Netlify
+Back-end of this app is deployed on Heroku. 
+
+# Future improvement
+I am planning on adding a few more functions to this app to allow user to edit their posts as well as updated password. 
+Another importing feature that I want to add is to not allow duplicate usename to signup. 
+And of course, the most obviouse part that needed to be improved is the UI. I'm aware that it doesnt look great at the moment but I will definitely update it soon :)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
