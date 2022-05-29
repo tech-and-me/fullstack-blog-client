@@ -21,11 +21,19 @@ const Logout = () => {
     <Container className="my-5 py-5 px-5 mx-auto text-center border border-3">
       <h4 className="mx-auto text-center">Are you sure you want to logout?</h4>
       <div className="mt-3">
-        <Button style={{ width: "5rem" }} onClick={(e) => handleLogOut(e)}>
+        <Button
+          className="bg-main"
+          style={{ width: "5rem" }}
+          onClick={(e) => handleLogOut(e)}
+        >
           Yes
         </Button>
         {"              "}
-        <Button style={{ width: "5rem" }} onClick={(e) => handleLogOut(e)}>
+        <Button
+          className="bg-main"
+          style={{ width: "5rem" }}
+          onClick={(e) => handleLogOut(e)}
+        >
           Cancel
         </Button>
       </div>

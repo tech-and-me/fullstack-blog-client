@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&family=Poppins:wght@300;400;500&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,700;1,8..144,100;1,8..144,500;1,8..144,600&display=swap');
+
+body{
+    font-family: 'Roboto Serif', serif;
+}
+
+
+.bg-main{
+    background-color: rgb(128, 106, 140)!important;
+    
+}
+
+.bg-sub{
+    background-color:rgb(213, 160, 213)!important;
+}
+
+.icon-color-main{
+    color:rgb(32, 89, 118)!important;
+    font-size: large!important;
+}
+
+.title{
+    color: rgb(211, 243, 244);
+    font-family:'Roboto Serif';
+    font-size: 300!important;
+    font-style: italic!important;
+}
+
+.letter-spacing-1{
+    letter-spacing: 2px;
+}
+
+.letter-spacing-2{
+    letter-spacing: 4px;
+}
+
+.footer-main{
+    color: rgb(211, 237, 238)!important;
+    font-family: "Roboto";
+    font-size: 100!important;
+    font-style: italic;
+    letter-spacing: 2px;
+}

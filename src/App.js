@@ -13,6 +13,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import PageNotFound from "./pages/PageNotFound";
 import Profile from "./pages/Profile";
+import Footer from "./pages/Footer";
 
 function App() {
   const [authState, setAuthState] = useState({
@@ -65,6 +66,7 @@ function App() {
           <Route path="/profile/:id" element={<Profile />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </AuthContext.Provider>
   );

@@ -4,7 +4,12 @@ import { useEffect, useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import { BsStarFill, BsStar } from "react-icons/bs";
-import { AiOutlineLike, AiOutlineDislike } from "react-icons/ai";
+import {
+  AiOutlineLike,
+  AiOutlineDislike,
+  AiFillDislike,
+  AiFillLike,
+} from "react-icons/ai";
 import { MdReadMore } from "react-icons/md";
 import { AuthContext } from "../helpers/AuthContext";
 
@@ -82,17 +87,17 @@ const Home = () => {
   // }
 
   return (
-    <Container className="my-5">
+    <Container className="my-5 pb-5">
       <Row xs={1} md={2} lg={3} className="g-4">
         {listOfPosts.map((post, index) => {
           return (
             <Col key={index}>
-              <Card className="bg-secondary">
-                <Card.Header className="d-flex flex-row justify-content-between align-items-baseline">
+              <Card className="bg-sub">
+                <Card.Header className="d-flex flex-row justify-content-between align-items-baseline title letter-spacing-1">
                   <Card.Title>{post.title}</Card.Title>
                   <div>
                     <MdReadMore
-                      className="fs-5"
+                      className="fs-5 icon-color-main"
                       onClick={() => navigate(`/post/${post.id}`)}
                     />
                   </div>
@@ -102,17 +107,23 @@ const Home = () => {
                 </Card.Body>
                 <Card.Footer className="fst-italic d-flex flex-row justify-content-between align-items-baseline">
                   <div>
-                    <span onClick={() => navigate(`/profile/${post.UserId}`)}>
+                    <span
+                      className="footer-main"
+                      onClick={() => navigate(`/profile/${post.UserId}`)}
+                    >
                       by: {post.userName}
                     </span>
                   </div>
                   <div>{post.Likes.length} Likes</div>
 
-                  <div onClick={(e) => handleLike(post.id)}>
+                  <div
+                    className="icon-color-main"
+                    onClick={(e) => handleLike(post.id)}
+                  >
                     {listofLikes.includes(post.id) ? (
-                      <AiOutlineDislike />
+                      <AiFillDislike />
                     ) : (
-                      <AiOutlineLike />
+                      <AiFillLike />
                     )}
                   </div>
                 </Card.Footer>

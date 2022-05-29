@@ -6,9 +6,9 @@ import { AuthContext } from "../helpers/AuthContext";
 const NavComponent = () => {
   const { authState } = useContext(AuthContext);
   return (
-    <Container fluid className="bg-secondary">
-      <Container className="text-light">
-        <div className="py-3 d-flex flex-row justify-content-between">
+    <Container fluid className="bg-main text-light letter-spacing-1">
+      <Container>
+        <div className="py-3 d-flex flex-column flex-md-row justify-content-between gap-3">
           <div>
             <Link to="/post" className="text-light pe-4 text-decoration-none">
               Home
@@ -24,12 +24,18 @@ const NavComponent = () => {
           </div>
 
           {authState.userName ? (
-            <div>Hello {authState.userName} ! Welcome to our blog !</div>
+            <div className="text-center">
+              <h5 className="italic letter-spacing-1">
+                Hello {authState.userName} ! Welcome to our blog !
+              </h5>
+            </div>
           ) : (
-            "You are not logged in."
+            <div className="text-center italic letter-spacing-1">
+              You are not logged in
+            </div>
           )}
 
-          <div>
+          <div className="text-end">
             {!authState.status ? (
               <>
                 <Link

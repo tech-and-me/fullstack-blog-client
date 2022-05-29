@@ -99,7 +99,7 @@ const Post = () => {
     <Container className="mt-5">
       <Row>
         <Col>
-          <Card className="bg-secondary">
+          <Card className="bg-sub">
             <Card.Header>
               <Card.Title>{postObject.title}</Card.Title>
             </Card.Header>
@@ -137,7 +137,7 @@ const Post = () => {
                 />
               </Col>
               <Col md={2} className="my-auto">
-                <Button variant="secondary" onClick={() => addComment()}>
+                <Button className="bg-main" onClick={() => addComment()}>
                   Add
                 </Button>
               </Col>
