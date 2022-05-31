@@ -4,6 +4,7 @@ import { useEffect, useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import { BsStarFill, BsStar } from "react-icons/bs";
+import { Link } from "react-router-dom";
 import {
   AiOutlineLike,
   AiOutlineDislike,
@@ -107,12 +108,12 @@ const Home = () => {
                 </Card.Body>
                 <Card.Footer className="fst-italic d-flex flex-row justify-content-between align-items-baseline">
                   <div>
-                    <span
+                    <Link
+                      to={`/profile/${post.UserId}`}
                       className="footer-main"
-                      onClick={() => navigate(`/profile/${post.UserId}`)}
                     >
                       by: {post.userName}
-                    </span>
+                    </Link>
                   </div>
                   <div>{post.Likes.length} Likes</div>
 
