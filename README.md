@@ -1,18 +1,21 @@
+# Important Message -- Please read--update -- this full-stack blog was deployed in Netlify on a free account but since Netlify removed the free account option, hence, my deployment link here is not working I will find another platform to deploy it. Stay tuned!!!!!
+# Apart from the deployment link issue, all the codes (front-end and back-end) are all good. :)
+
 # Introdution
-This project is a full-stack web application where users require to signup to view all posts , create post, add comment, delete comment, like or unlike a post.
+This project is a full-stack web application where users are required to sign up to view all posts, create posts, add comments, delete comments, and like or unlike a post.
 Frontend of this web application is built with react.js. I used react-icons as well as react-bootstrap for some styling.
 
 # Database
-I used MySQL for database management of this web application. Since MySQl is not a clouded-based database, to make this app work perfectly fine anywhere in the wold, I have connect MySQL Database with ClearDB Database with the help of Heroku Add-on option. 
+I used MySQL for database management of this web application. Since MySQL is not a cloud-based database, to make this app work perfectly fine anywhere in the world, I have connected MySQL Database with ClearDB Database with the help of the Heroku Add-on option. 
 
 # Deployment
 Front-end of this app is deployed on Netlify
-Back-end of this app is deployed on Heroku. 
+The back end of this app is deployed on Heroku. 
 
 # Future improvement
-I am planning on adding a few more functions to this app to allow user to edit their posts as well as updated password. 
-Another importing feature that I want to add is to not allow duplicate usename to signup. 
-And of course, the most obviouse part that needed to be improved is the UI. I'm aware that it doesnt look great at the moment but I will definitely update it soon :)
+I am planning on adding a few more functions to this app to allow the user to edit their posts as well as update passwords. 
+Another importing feature that I want to add is to not allow duplicate usernames to sign up. 
+And of course, the most obvious part that needed to be improved is the UI. I'm aware that it doesn't look great at the moment but I will update it soon :)
 
 
 
@@ -51,11 +54,11 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single-build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point, you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However, we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
 ## Learn More
 
