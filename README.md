@@ -1,5 +1,10 @@
-# Important Message -- Please read--update -- this full-stack blog was deployed on Netlify on a free account but since Netlify removed the free account option, hence, my deployment link here is not working I will find another platform to deploy it. Stay tuned!!!!!
-# Apart from the deployment link issue, all the codes (front-end and back-end) are all good. :)
+# Important Message - Please Read - Update
+The back end of this app was originally deployed on Heroku, but since Heroku no longer offers a free tier, it has disrupted our deployment link. Rest assured, I will deploy it on another alternative platform when I have the time. Please stay tuned for further updates!
+
+In the meantime, please note that the codes for both the front end and back end are still up and working okay locally.
+
+Thank you for your understanding!
+
 
 # Introdution
 This project is a full-stack web application where users are required to sign up to view all posts, create posts, add comments, delete comments, and like or unlike a post.
