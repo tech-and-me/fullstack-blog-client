@@ -1,4 +1,4 @@
-# Important Message -- Please read--update -- this full-stack blog was deployed in Netlify on a free account but since Netlify removed the free account option, hence, my deployment link here is not working I will find another platform to deploy it. Stay tuned!!!!!
+# Important Message -- Please read--update -- this full-stack blog was deployed on Netlify on a free account but since Netlify removed the free account option, hence, my deployment link here is not working I will find another platform to deploy it. Stay tuned!!!!!
 # Apart from the deployment link issue, all the codes (front-end and back-end) are all good. :)
 
 # Introdution
